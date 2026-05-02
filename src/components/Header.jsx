@@ -1,7 +1,7 @@
 import '../styles/header.css'
 import { Link } from 'react-router-dom'
 
-function Header(isAuthenticated) {
+function Header() {
     return (
         <div className="header-container">
             <nav className="header-content">
@@ -12,6 +12,7 @@ function Header(isAuthenticated) {
                     </div>
 
                     <ul className="header-links">
+                        {/* TODO: tornar privado acesso a 'minhas estantes', forçando o login para efetuar ações*/}
                         <li> <Link to="/my-shelf">Minha estante</Link> </li>
                         <li> <Link to="/public-shelf">Estante compartilhada</Link> </li>
                         <li> <Link to="/register">Criar conta</Link> </li>
