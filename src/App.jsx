@@ -1,9 +1,11 @@
 import './App.css'
+import Header from './components/Header'
 
 function App() {
   return (
     <>
       <section id="center">
+        <Header />
         <div>
           <h1>Get started</h1>
           <p>
