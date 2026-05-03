@@ -1,0 +1,75 @@
+.register-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.register-card {
+    width: 50vh;
+    padding: 30px;
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+
+    border: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.register-card input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.08);
+    color: #f1f1f1;
+}
+
+.register-card button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+
+    background: #6366f1;
+    color: #f1f1f1;
+
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.register-card {
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(99, 102, 241, 0.2);
+}
+
+.register-card h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #f1f5f9;
+
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+
+    letter-spacing: 0.4px;
+}
+.register-card h1 {
+  background: linear-gradient(90deg, #6366f1, #a5b4fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.register-card p {
+    margin-top: 16px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
