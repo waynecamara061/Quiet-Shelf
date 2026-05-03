@@ -1,0 +1,138 @@
+.section-shelf {
+    margin-bottom: 40px;
+}
+
+.section-shelf h2 {
+    color: #e5e7eb;
+    font-size: 26px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.shelf-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.shelf-carousel {
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.shelf-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.book-item {
+    min-width: 120px;
+    height: 160px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-item:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.book-overlay {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.7),
+        transparent
+    );
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.book-title {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #f1f1f1;
+    text-transform: uppercase;
+}
+
+.book-author {
+    font-size: 10px;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.08);
+    color: #f1f1f1;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    z-index: 3;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.nav-btn.left {
+    left: -12px;
+}
+
+.nav-btn.right {
+    right: -12px;
+}
+
+.shelf-wrapper::before,
+.shelf-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.shelf-wrapper::before {
+    left: 0;
+}
+
+.shelf-wrapper::after {
+    right: 0;
+}
+
+.shelf-carousel {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  padding: 10px;
+}
